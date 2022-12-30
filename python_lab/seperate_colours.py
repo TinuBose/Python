@@ -1,3 +1,3 @@
-c=input('enter colours')
-d=c.split(",")
-print(d[0],d[-1])
+colors=input("enter colors: ")
+a=colors.split(",")
+print("first = ",a[0],"\n","second = ",a[-1])
