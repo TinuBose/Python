@@ -1,9 +1,4 @@
-str="onion"
-first=str[0]
-word=first
-for i in range(1,len(str)):
-    if str[i]==first:
-        word+="$"
-    else:
-        word+=str[i]
-print(word)
+str_1 = input("enter a string")
+first = str_1[0]
+a = str_1.replace(str_1[0], "$")
+print(first + a[1:])
