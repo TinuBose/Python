@@ -1,20 +1,14 @@
 def fibonacci(n):
-    if n <= 0:
-        return 0
+   if n <= 1:
+       return n
+   else:
+       return(fibonacci(n-1) + fibonacci(n-2))
 
+limit = int(input("enter range : "))
 
-    elif n == 1:
-        return 1
-
-    else:
-        return fibonacci(n - 1) + fibonacci(n - 2)
-
-
-limit = int(input("enter the limit : "))
-print("fibonacci series upto ", limit, " is :", end=" ")
-
-if limit > 1:
-    for i in range(limit):
-        print(fibonacci(i), end=" ")
+if limit <= 0:
+   print("Plese enter a positive integer")
 else:
-    print(fibonacci(limit))
+   print("Fibonacci sequence up to ",limit," is ")
+   for i in range(limit):
+       print(fibonacci(i))
